@@ -1,1 +1,3 @@
 # SlugEats
+
+SlugEats is a GUI application built using the Kivy framework for Python and pandas. The app provides information about open dining halls, their hours of operation, and food being served along with the nutrition facts. It also allows users to calculate their daily calorie intake based on their height and weight, and keeps track of their Slug Points balance. The goal of the project is to help the community on the university campus to live healthier lives by being mindful of their food choices and spending. The team hopes to improve the appearance of the app and incorporate matplotlib to graph daily nutrients, with a future goal of turning it into an app for iOS and Android.
