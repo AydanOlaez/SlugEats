@@ -1,0 +1,37 @@
+#:kivy 1.11.0
+
+<TabbedPanel>:
+    size_hint: 1, 1
+    pos_hint: {'center_x': .5, 'center_y': .5}
+    do_default_tab: False
+    tab_width: self.size[0]/len(self.tab_list)
+    background_image: '/Users/aydanolaez/SlugEats/blue.png'
+
+    # Creates tab with color and text that displays slug point calculator when clicked
+    TabbedPanelItem:
+        background_normal: 'blue.png'
+        text: 'Slug Points Calculator'
+        color: "#ffcc00"
+        SlugPointCalculator:
+
+    # Created tab with color and text that when clicked displays pandas dataframe showing hours of operation for dining halls
+    TabbedPanelItem:
+        background_normal: 'blue.png'
+        text: 'Hours'
+        color: "#ffcc00"
+        GridLayout:
+            cols: 1
+            DataFrameSchedule:
+    TabbedPanelItem:
+        background_normal: 'blue.png'
+        text: 'Menu'
+        color: "#ffcc00"
+        GridLayout:
+            cols: 1
+            DataFrameNutrition:
+    TabbedPanelItem:
+        background_normal: 'blue.png'
+        text: 'You'
+        color: "#ffcc00"
+        PersonInformation:
+
